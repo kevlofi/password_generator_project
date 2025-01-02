@@ -95,9 +95,6 @@ const characters = [
 let passwordEl1 = document.querySelector("#password-el1");
 let passwordEl2 = document.querySelector("#password-el2");
 
-console.log(passwordEl1);
-console.log(passwordEl2);
-
 let randNumber = Math.floor(Math.random() * (18 - 12 + 1)) + 12;
 
 function generatePasswords() {
@@ -110,9 +107,7 @@ function generatePasswords() {
   }
 
   for (let i = 0; i < randNumber; i++) {
-    let randNumber2 = Math.floor(Math.random() * (91 - 1 + 1));
+    let randNumber2 = Math.floor(Math.random() * 92);
     passwordEl2.textContent += characters[randNumber2];
   }
 }
-
-console.log(randNumber);
